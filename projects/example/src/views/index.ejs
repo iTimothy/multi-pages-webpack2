@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" /> 
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+   	<% include template/header.ejs %>
+    <div>测试</div>
+   	<img src="<%= require("../images/img.jpg") %>" alt="" class="img">
+    <img src="http://t.com/api/test.jpg" alt="" class="img">
+   	<% include views/ul.ejs %> 
+   	<% include views/footer.ejs %> 
+    <p class="tt">ttt</p>
+    <div class="bg"></div>
+    <% var tt = [5,7,4,3]; %>
+    <% for(var i = 0; i < tt.length; i++) {%>
+    <p><%= tt[i] %></p>
+    <% } %>
+  
+    <% if(false){%>
+      <p><%= 2333 %></p>
+    <% }else{ %>
+      <p><%= 4555 %></p>
+    <% } %>
+    <p>ggghhhhhhhhhhhh</p>
+  </body>
+  
+</html>
